@@ -22,7 +22,7 @@ while 1:
         break
     elif not re.search("[!@#$%^&*()]", input_txt):
         valid = False
-        err = er.format(er="a Special character")
+        err = err.format(er="a Special character")
         break
     else:
         valid = True
