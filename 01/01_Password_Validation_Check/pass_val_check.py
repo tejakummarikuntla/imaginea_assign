@@ -1,34 +1,47 @@
 import re
 
-err = "Password Should Include Atleast {er}"
-input_txt = str(input())
-valid = True
-while 1:
-    if (len(input_txt) < 8):
+test_cases = ["Password Lenght > 8 ",
+              "Atleast a single alphabet ",
+              "Atleast a Captial Letter ",
+              "Atleast a Numberical Digit ",
+              "Atleast a speacial Character "]
+
+def is_valid(input_text):
+    valid = True
+    if(len(input_txt) < 8):
+        print(test_cases[0],"NO")
         valid = False
-        err = err.format(er="8 characters")
-        break
-    elif not re.search("[a-z]", input_txt):
-        valid = False
-        err = err.format(er="an Alphabet")
-        break
-    elif not re.search("[0-9]", input_txt):
-        valid = False
-        err = err.format(er="a Number")
-        break
-    elif not re.search("[A-Z]", input_txt):
-        valid = False
-        err = err.format(er="a Captial letter")
-        break
-    elif not re.search("[!@#$%^&*()]", input_txt):
-        valid = False
-        err = err.format(er="a Special character")
-        break
     else:
-        valid = True
-        print("Valid Password")
-        break
+        print(test_cases[0], "YES")
+    if not re.search("[a-z]", input_txt):
+        print(test_cases[1], "NO")
+        valid = False
+    else:
+        print(test_cases[1], "YES")
+    if not re.search("[A-Z]", input_txt):
+        print(test_cases[2], "NO")
+        valid = False
+    else:
+        print(test_cases[2], "YES")
+    if not re.search("[0-9]", input_txt):
+        print(test_cases[3], "NO")
+        valid = False
+    else:
+        print(test_cases[2], "YES")
+    if not re.search("[!@#$%^&*()]", input_txt):
+        print(test_cases[4], "NO")
+        valid = False
+    else:
+        print(test_cases[3],"YES")
+    
+    return valid
 
-if valid == False:
-    print(err)
-
+if __name__ == "__main__":
+    while 1:
+        input_txt = str(input("Enter Your Password: "))
+        res = is_valid(input_txt)
+        if(res == False):
+            print("Invalid Password")
+        else:
+            print("Valid Password")
+            break
