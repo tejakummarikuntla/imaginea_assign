@@ -32,8 +32,8 @@ def is_valid(input_text):
         print(test_cases[4], "NO")
         valid = False
     else:
-        print(test_cases[3],"YES")
-    
+        print(test_cases[4],"YES")
+
     return valid
 
 if __name__ == "__main__":
