@@ -1,0 +1,16 @@
+INFO:root:Ran with args: ('Tom', 22), and kwargs: {}
+INFO:root:Ran with args: ('Tom', 22), and kwargs: {}
+INFO:root:Ran with Args: ('Hill', 45), and Kwargs {}
+INFO:root:Ran with Args: ('Hill', 45), and Kwargs {}
+INFO:root:Ran with Args: ('Hill', 45), and Kwargs {}
+INFO:root:Ran with Args: ('Oill', 45), and Kwargs {}
+INFO:root:Ran with Args: ('Oill', 45, 'Key: hell'), and Kwargs {}
+INFO:root:Ran with Args: ('Oill', 45), and Kwargs {}
+INFO:root:Ran with Args: ('Kill', 15), and Kwargs {}
+INFO:root:Ran with Args: (), and Kwargs {}
+INFO:root:Ran with Args: (), and Kwargs {}
+INFO:root:Ran with Args: (2, 4), and Kwargs {}
+INFO:root:Ran with Args: (), and Kwargs {}
+INFO:root:Ran with Args: (2, 4), and Kwargs {}
+INFO:root:Ran with Args: (), and Kwargs {}
+INFO:root:Ran with args: ('Tom', 22), and kwargs: {}
